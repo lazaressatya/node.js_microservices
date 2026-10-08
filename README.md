@@ -1,6 +1,6 @@
 # Node.js Microservices with Docker & GitHub Actions
 
-A simple Node.js microservices project demonstrating how to build, containerize, and deploy independent services using **Node.js, Docker, Docker Compose, GitHub Actions, AWS ECR, and AWS EC2**.
+A simple Node.js microservices project demonstrating how to build, containerize, and deploy independent services using **Node.js, Docker, Docker Compose, GitHub Actions, DockerHub, and AWS EC2**.
 
 ---
 
@@ -38,7 +38,7 @@ GitHub Actions is used to automatically build Docker images and deploy the servi
           Workflow             Workflow
               |                   |
               v                   v
-             ECR                 ECR
+    Dockerhub or ECR             Dockerhub or ECR
               |                   |
               +---------+---------+
                         |
@@ -630,10 +630,10 @@ Checkout
 Build Docker Image
     |
     v
-Login to AWS ECR
+Login to AWS ECR or Dockerhub
     |
     v
-Push Image to ECR
+Push Image to ECR or or Dockerhub
     |
     v
 SSH to EC2
@@ -665,7 +665,7 @@ user-service.yml
 Docker Build
       |
       v
-AWS ECR
+AWS ECR or or Dockerhub
       |
       v
 AWS EC2
@@ -849,57 +849,13 @@ docker compose up -d
        |                   |
        v                   v
  User Service        Order Service
-```
 
----
+<img width="1917" height="612" alt="image" src="https://github.com/user-attachments/assets/56f1838d-2a76-4b07-9a4f-ef07b94c4d42" />
 
-# 🎯 Learning Objectives
 
-This project demonstrates:
 
-- Microservices architecture
-- Node.js REST APIs
-- Independent service deployment
-- Docker containerization
-- Docker Compose
-- GitHub Actions
-- CI/CD pipelines
-- AWS ECR
-- AWS EC2
-- Linux administration
-- SSH deployment
-- Container networking
-- Environment variables
-- AWS IAM
-- Git and GitHub
 
----
 
-# 🚀 Future Improvements
-
-The project can be extended with:
-
-```text
-✓ MongoDB
-✓ PostgreSQL
-✓ Nginx
-✓ API Gateway
-✓ Authentication / JWT
-✓ Redis
-✓ RabbitMQ
-✓ HTTPS / SSL
-✓ AWS Secrets Manager
-✓ CloudWatch
-✓ Prometheus
-✓ Grafana
-✓ Trivy
-✓ SonarQube
-✓ Terraform
-✓ Kubernetes
-✓ AWS EKS
-```
-
----
 
 # 👨‍💻 Author
 
